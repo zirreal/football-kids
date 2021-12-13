@@ -18,3 +18,4 @@
 - Inputmask (для добавлении маски телефона)
 - focus-visible
 - yandex map
+- php mailer ( для отправки писем на почту)
