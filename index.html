@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Football Kids - секция дошкольного футбола в г.Новокуйбышевск</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Kids - секция дошкольного футбола в г.Новокуйбышевск</title>
+  <meta name="description" content="Секция дошкольного футбола в г.Новокуйбышевск">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" >
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="container header__container">
+      <button class="burger__btn">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <div class="burger-menu">
+        <ul class="menu__list reset">
+          <li class="menu__item">
+            <a href="#advantages" class="menu__link">
+              Преимущества
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#coaches" class="menu__link">
+              Тренеры
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#reviews" class="menu__link">
+              Отзывы
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#prices" class="menu__link">
+              Стоимость
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="menu__link">
+              Контакты
+            </a>
+          </li>
+          <li class="menu__item nav__item--with-icon">
+            <a href="#contacts"  class="menu__link">
+              Записаться
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav header_nav">
+        <ul class="nav__list reset">
+          <li class="nav__item">
+            <a href="#advantages" class="nav__link" data-speed="1000" >
+              Преимущества
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#coaches" class="nav__link">
+              Тренеры
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#reviews" class="nav__link">
+              Отзывы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#prices" class="nav__link">
+              Стоимость
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">
+              Контакты
+            </a>
+          </li>
+          <li class="nav__item nav__item--with-icon">
+            <a href="#contacts"  class="nav__link nav__link--special">
+              Записаться
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right">
+        <span class="header-phone">
+          <a href="tel:+79276598481" class="header-phone__link">+7 (927) 659-84-81</a>
+        </span>
+        <ul class="socials header__socials reset">
+          <li class="socials__item">
+            <a href="https://vk.com/footballkids_nsk" target="_blank" aria-label="Ссылка на наш ВКонтакте" class="socials__link socials__link--vk"></a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.instagram.com/footballkids_nsk/" target="_blank" aria-label="Ссылка на наш Инстаграм" class="socials__link socials__link--ig"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" target="_blank" aria-label="Ссылка на наш Телеграм" class="socials__link socials__link--tg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title reset">
+          Футбольная школа для детей от 4-х до 7 лет
+        </h1>
+        <p class="hero__descr reset">
+          Наши ученики становятся звездами футбола среди ровесников
+        </p>
+
+        <div class="modal-lesson modal">
+          <button class="modal-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.6831 20.7882L20.7889 23.6823L12.0007 14.8941L3.21248 23.6823L0.318359 20.7882L9.10659 12L0.318359 3.21175L3.21248 0.317631L12.0007 9.10587L20.7889 0.317631L23.6831 3.21175L14.8948 12L23.6831 20.7882Z" fill="#2E0062"/>
+              </svg>
+          </button>
+          <h2 class="title modal__title reset">
+            Запись на разовое занятие
+          </h2>
+          <span class="modal__descr">Проходят по&nbsp;вторникам и&nbsp;четвергам
+            с&nbsp;16:00 до&nbsp;17:00</span>
+            <form action="mail.php" enctype="multipart/form-data" method="POST" class="modal__form form">
+              <input type="hidden" name="admin_email[]" value="uug11@mail.ru">
+              <input type="hidden" name="form_subject" value="Запись на разовое занятие">
+              <label class="modal__from-label modal-lesson__form-label">
+              <input type="text" required name="name" data-validate-field="name" placeholder="Ваше имя" class="form__input" />
+            </label>
+            <label class="modal__from-label modal-lesson__form-label">
+              <input type="tel" required name="phone" data-validate-field="phone" placeholder="Телефон"
+                class="form__input" />
+              </label>
+              <label class="modal__from-label modal-lesson__form-label">
+                <input type="number" required min="4" max="7" name="age" placeholder="Возраст ребенка"
+                  class="form__input" />
+                </label>
+              <button type="submit" class="btn form__btn" aria-label="Записаться на пробное занятие">Записаться</button>
+            </form>
+        </div>
+        <div class="modal-popup popup">
+          <button class="popup-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.6831 20.7882L20.7889 23.6823L12.0007 14.8941L3.21248 23.6823L0.318359 20.7882L9.10659 12L0.318359 3.21175L3.21248 0.317631L12.0007 9.10587L20.7889 0.317631L23.6831 3.21175L14.8948 12L23.6831 20.7882Z" fill="#2E0062"/>
+              </svg>
+          </button>
+          <h2 class="reset title popup__title">
+            Лучшее решение за сегодня!
+          </h2>
+          <p class="popup__descr reset">
+            Заявка уже улетела нам на почту, скоро позвоним.
+          </p>
+        </div>
+        <button class="btn hero__btn take-a-lesson__btn" aria-label="Записаться в спортивную секцию">
+          Записаться
+        </button>
+      </div>
+    </section>
+    <section class="advantages" id="advantages">
+      <div class="container advantages__container">
+        <h2 class="title title__advantages reset">Преимущества</h2>
+        <ul class="advantages__list reset">
+          <li class="advantages__item advantages__item--present">Первое занятие бесплатно</li>
+          <li class="advantages__item advantages__item--cups">Индивидуальный подход к каждому ученику и уникальная методика</li>
+          <li class="advantages__item advantages__item--camp">Гарантированное дальнейшее обучение в спортивной школе на бесплатной основе</li>
+          <li class="advantages__item advantages__item--player">Дипломированные тренеры, прошедшие специальную подготовку для работы с детьми дошкольного возраста</li>
+          <li class="advantages__item advantages__item--hands">Удобные группы по 10-15 человек, разделённые по возрасту</li>
+          <li class="advantages__item advantages__item--cafe">Безопасные упражнения и инвентарь.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="groups">
+      <div class="container groups__container">
+        <h2 class="title groups__title reset">Две возрастные группы</h2>
+        <div class="groups-wrapper">
+          <div class="first-group card">
+            <h3 class="groups__sub-title reset">
+              4-5 лет
+            </h3>
+            <p  class="groups__paragraph reset">
+              <span class="underline">Специалисты </span> рекомендуют начинать заниматься футболом с 4 лет. Не все школы идут на это. У нас дети занимаются по уникальной методике, разработанной для самых маленьких.
+            </p>
+            <img class="group__img"  src="img/bear.png" alt="мишка">
+          </div>
+          <div class="second-group card">
+            <h3 class="groups__sub-title reset">
+              6-7 лет
+            </h3>
+            <p class="groups__paragraph reset">
+              Всех своих воспитанников от 7 лет - мы передаем в футбольную команду, где дети под руководством опытных тренеров продолжают свой футбольный пут.
+            </p>
+            <img class="group__img" src="img/play.png" alt="игра">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mini-info">
+      <div class="container mini-info__container">
+        <h3 class="mini-info__sub-title reset">Внимание к детям превыше всего</h3>
+        <p class="mini-info__descr reset">Все наши занятия проходят на территориях школ (Гимназия №1 и Школа №6).</p>
+        <p class="mini-info__descr reset">Мы не сетевой проект и направляем внимание только на качественную подготовку воспитанников.</p>
+      </div>
+    </section>
+    <section class="coaches" id="coaches"> 
+      <div class="container coaches__container">
+        <h2 class="title coaches__title reset">Опытные тренеры</h2>
+        <div class="coaches__swiper-btns swiper-btns">
+          <div class="swiper-button-prev coaches__btn-prev">
+          </div>
+          <div class="swiper-button-next coaches__btn-next">
+          </div>
+        </div>
+        <div class="swiper-container coaches-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide coaches-slide">
+              <h3 class="coaches__sub-title reset">
+                Клюев Владимир Викторович
+              </h3>
+              <div class="swiper-content-wrapper">
+              <div class="coaches__tabs tabs">
+              <button class="btn coaches__btn-achievement tabs__btn active"  aria-label="Просмотреть достижения наших тренеров" data-btn="1"> Достижения</button>
+              <button class="btn coaches__btn-education tabs__btn" aria-label="Просмотреть образование наших тренеров"  data-btn="2"> Образование</button>
+                <div class="tabs__content active" data-coaches-content="1">
+                  <p class="tabs__descr reset">
+                    За 5 лет провел более 1 000 индивидуальных и 2 000
+                    групповых тренировок
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошёл подготовку по специальностям «Профилактика травматизма в детском футболе» и «Спортивная психология дошкольников»
+                  </p>
+                </div>
+                <div class="tabs__content" data-coaches-content="2">
+                  <p class="tabs__descr reset">
+                    Здравствуйте! Меня зовут Владимир, я научу вашего ребенка профессионально владеть мячом.
+                  </p>
+                  <p class="tabs__descr reset">
+                    ФГБОУ ВПО Поволжская государственная социально-гуманитарная академия, специалист в сфере физической культуры и спорта - тренер (Футбол).
+                  </p>
+                  <p class="tabs__descr reset">
+                    Стаж работы с 2008 года.
+                  </p>
+                  <p class="tabs__descr reset">
+                    В 2011 году проходил повышение квалификации в Академии футбола им. Юрия Коноплёва
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошел специальную подготовку для работы с детьми дошкольного возраста.
+                  </p>
+                </div>
+              </div>
+              <div class="coaches__images">
+                <img class="coaches__img" src="img/coach_1.jpeg" alt="Клюев Владимир Викторович">
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide coaches-slide">
+              <h3 class="coaches__sub-title reset">
+                Миндубаев Сергей Вадимович
+              </h3>
+              <div class="swiper-content-wrapper">
+              <div class="coaches__tabs tabs">
+              <button class="btn coaches__btn-achievement tabs__btn active" aria-label="Просмотреть достижения наших тренеров" data-btn="1"> Достижения</button>
+              <button class="btn coaches__btn-education tabs__btn" aria-label="Просмотреть образование наших тренеров" data-btn="2"> Образование</button>
+                <div class="tabs__content active" data-coaches-content="1">
+                  <p class="tabs__descr reset">
+                    За 5 лет провел более 1 000 индивидуальных и 2 000
+                    групповых тренировок
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошёл подготовку по специальностям «Профилактика травматизма в детском футболе» и «Спортивная психология дошкольников»
+                  </p>
+                </div>
+                <div class="tabs__content" data-coaches-content="2">
+                  <p class="tabs__descr reset">
+                    Здравствуйте! Меня зовут Сергей, я научу вашего ребенка профессионально владеть мячом.
+                  </p>
+                  <p class="tabs__descr reset">
+                    Высшее образование, ФГБОУ ВПО Поволжская государственная социально-гуманитарная академия, специалист в сфере физической культуры и спорта - тренер (Футбол).
+                  </p>
+                  <p class="tabs__descr reset">
+                    Стаж работы с 2009 года (10 лет).
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошел специальную подготовку для работы с детьми дошкольного возраста.
+                  </p>
+                </div>
+              </div>
+              <div class="coaches__images">
+                <img class="coaches__img" src="img/coach_2.jpeg" alt="Миндубаев Сергей Вадимович">
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide coaches-slide">
+              <h3 class="coaches__sub-title reset">
+                Филюшин Артём Юрьевич
+              </h3>
+              <div class="swiper-content-wrapper">
+              <div class="coaches__tabs tabs">
+              <button class="btn coaches__btn-achievement tabs__btn active"  aria-label="Просмотреть достижения наших тренеров" data-btn="1"> Достижения</button>
+              <button class="btn coaches__btn-education tabs__btn" aria-label="Просмотреть образование наших тренеров" data-btn="2"> Образование</button>
+                <div class="tabs__content active" data-coaches-content="1">
+                  <p class="tabs__descr reset">
+                    За 5 лет провел более 1 000 индивидуальных и 2 000
+                    групповых тренировок
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошёл подготовку по специальностям «Профилактика травматизма в детском футболе» и «Спортивная психология дошкольников»
+                  </p>
+                </div>
+                <div class="tabs__content" data-coaches-content="2">
+                  <p class="tabs__descr reset">
+                    Здравствуйте! Меня зовут Артем, я научу вашего ребенка профессионально владеть мячом.
+                  </p>
+                  <p class="tabs__descr reset">
+                     Высшее образование, ФГБОУ ВПО Поволжская государственная социально-гуманитарная академия, специалист в сфере физической культуры и спорта - тренер (Футбол)
+                  </p>
+                  <p class="tabs__descr reset">
+                    Стаж работы с 2008 года.
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошел специальную подготовку для работы с детьми дошкольного возраста.
+                  </p>
+                </div>
+              </div>
+              <div class="coaches__images">
+                <img class="coaches__img" src="img/coach_4.jpeg" alt="Филюшин Артём Юрьевич">
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide coaches-slide">
+              <h3 class="coaches__sub-title reset">
+                Артюшин Егор Юрьевич
+              </h3>
+              <div class="swiper-content-wrapper">
+              <div class="coaches__tabs tabs">
+              <button class="btn coaches__btn-achievement tabs__btn active" aria-label="Просмотреть достижения наших тренеров"  data-btn="1"> Достижения</button>
+              <button class="btn coaches__btn-education tabs__btn" aria-label="Просмотреть образование наших тренеров" data-btn="2"> Образование</button>
+                <div class="tabs__content active" data-coaches-content="1">
+                  <p class="tabs__descr reset">
+                    За 5 лет провел более 1 000 индивидуальных и 2 000
+                    групповых тренировок
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошёл подготовку по специальностям «Профилактика травматизма в детском футболе» и «Спортивная психология дошкольников»
+                  </p>
+                </div>
+                <div class="tabs__content" data-coaches-content="2">
+                  <p class="tabs__descr reset">
+                    Здравствуйте! Меня зовут Егор, я научу вашего ребенка профессионально владеть мячом.
+                  </p>
+                  <p class="tabs__descr reset">
+                    Среднее профессиональное образование, ФГБУ ПОО «Государственное училище (техникум) олимпийского резерва г. Самара, педагог по физической культуре и спорту.
+                  </p>
+                  <p class="tabs__descr reset">
+                    Стаж работы с 2014 года.
+                  </p>
+                  <p class="tabs__descr reset">
+                    Прошел специальную подготовку для работы с детьми дошкольного возраста.
+                  </p>
+                </div>
+              </div>
+              <div class="coaches__images">
+                <img class="coaches__img" src="img/coach_5.jpeg" alt="Артюшин Егор Юрьевич">
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section class="uniform">
+      <div class="container uniform__container">
+        <h3 class="uniform__sub-title reset">
+          У нас модная спортивная форма
+        </h3>
+        <p class="uniform__descr reset">
+          Брендированные футболки, шорты и гетры.
+        </p>
+        <span class="uniform__price">
+          Стоимость комплекта — 2500₽
+        </span>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container reviews__container">
+        <h2 class="title reviews__title reset">
+          Отзывы
+        </h2>
+        <div class="sprites reviews__sprites">
+          <svg class="reset sprite reviews__sprite"  width="124" height="83" viewbox="0 0 124 83">
+            <use xlink:href="img/sprites/Group.svg#1"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="128" height="128" viewbox="0 0 128 128">
+            <use xlink:href="img/sprites/Group-1.svg#2"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="123" height="137" viewbox="0 0 123 137">
+            <use xlink:href="img/sprites/Group-2.svg#3"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-3.svg#4"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-4.svg#5"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-5.svg#6"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-6.svg#7"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-7.svg#8"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-8.svg#9"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-9.svg#10"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-10.svg#11"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-11.svg#12"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-12.svg#13"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-13.svg#14"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-14.svg#15"></use>
+          </svg>
+          <svg class="reset sprite reviews__sprite"  width="70" height="70" viewbox="0 0 70 70">
+            <use xlink:href="img/sprites/Group-15.svg#16"></use>
+          </svg>
+        </div>
+        <div class="reviews__cards">
+          <ul class="reviews__list reset">
+            <li class="reviews__item">
+              <div class="reviews__card-wrapper">
+              <p class="reviews__descr reset">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную рыбными языкового продолжил точках раз напоивший путь правилами речью образ наш там прямо, букв снова несколько? Знаках переписывается ее послушавшись, напоивший языком океана текст! 
+              </p>
+              <div class="reiviews__author first-author">
+                <div class="reviews__author-left">
+                  <img src="img/mom.png" alt="фотография">
+                </div>
+                <div class="reviews__author-right">
+                  <h3 class="reviews__sub-title reset">Ольга Фролова</h3>
+                <span class="reiviews__name">Мама Саши,</span>
+                <span class="reiviews__name">пятилетнего футболиста,</span>
+                </div>
+              </div>
+            </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__card-wrapper">
+                <p class="reviews__descr reviews__descr--second reset">
+                  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Речью ручеек решила запятой подзаголовок выйти толку знаках возвращайся семь.</p>
+                <div class="reiviews__author">
+                  <div class="reviews__author-left">
+                    <img src="img/mom-2.png" alt="фотография">
+                  </div>
+                  <div class="reviews__author-right">
+                  <h3 class="reviews__sub-title reset">Ольга Петрова</h3>
+                  <span class="reiviews__name">Мама Жени,</span>
+                  <span class="reiviews__name">четырехлетнего футболиста,</span>
+                </div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__card-wrapper">
+                <p class="reviews__descr reviews__descr--third reset">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Точках большой сих текстов мир пояс большого коварный не пунктуация напоивший деревни, образ по всей себя диких агентство великий жизни строчка?</p>
+                <div class="reiviews__author">
+                  <div class="reviews__author-left">
+                    <img src="img/dad.png" alt="фотография">
+                  </div>
+                  <div class="reviews__author-right">
+                    <h3 class="reviews__sub-title reset">Никита Хрусталёв</h3>
+                  <span class="reiviews__name">Папа Дениса,</span>
+                  <span class="reiviews__name">шестилетнего футболиста,</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__card-wrapper">
+                <p class="reviews__descr reset">
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свое грустный повстречался инициал дороге всеми подзаголовок пунктуация заголовок, сбить на берегу снова, домах даль которое рекламных города предложения не. Рыбными инициал проектах пояс своих буквенных сих.</p>
+                <div class="reiviews__author">
+                  <div class="reviews__author-left">
+                    <img src="img/dad-2.png" alt="фотография">
+                  </div>
+                  <div class="reviews__author-right">
+                    <h3 class="reviews__sub-title reset">Сергей Иванов</h3>
+                  <span class="reiviews__name">Папа Димы,</span>
+                  <span class="reiviews__name">семилетнего футболиста,</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="practices-photos">
+      <div class="practices-photos-bg-figure"></div>
+      <h2 class="title practices-photos__title reset">
+        Фото занятий
+      </h2>
+      <div class="swiper-btns practices-photos__swiper-btns">
+        <div class="swiper-button-prev practices-photos__btn-prev">
+        </div>
+        <div class="swiper-button-next practices-photos__btn-next">
+        </div>
+      </div>
+    <div class="swiper-container practices-photos__swiper-container">
+      <div class="swiper-wrapper practices-photos__swiper-wrapper">
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/1.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/2.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/3.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/4.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/5.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/6.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/7.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/8.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/9.jpg" alt="Фотография тренировки">
+        </div>
+        <div class="swiper-slide practices-photos__slide">
+          <img src="img/10.jpg" alt="Фотография тренировки">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="prices" id="prices">
+      <div class="container prices__container">
+        <h2 class="title prices__title reset">Сколько стоит школа</h2>
+        <!-- <svg class="reset sprite prices__sprite"  width="128" height="128" viewbox="0 0 128 128">
+          <use xlink:href="img/sprites/Group-16.svg#17"></use>
+        </svg> -->
+        <div class="prices-wrapper">
+          <div class="prices__card prices__card--cat">
+            <h4 class="prices__sub-title reset">
+              Разовое занятие
+            </h4>
+            <span class="prices__descr">
+              1 тренировка
+            </span>
+            <h3 class="prices__cost reset">
+              700 рублей
+            </h3>
+          </div>
+          <div class="prices__card prices__card--tiger">
+               <h4 class="prices__sub-title prices-sub-title--tiger reset">
+                Начальный
+              </h4>
+              <span class="prices__descr prices__descr--tiger">
+                4 тренировки в месяц
+              </span>
+              <h3 class="prices__cost prices__cost--tiger reset">
+                2600 рублей
+              </h3>
+          </div>
+          <div class="prices__card prices__card--lion">
+               <h4 class="prices__sub-title reset">
+                Оптимальный 
+              </h4>
+              <span class="prices__descr">
+                8 тренировок в месяц
+              </span>
+              <h3 class="prices__cost reset">
+                4800 рублей
+              </h3>
+          </div>
+        </div>
+          <button class="btn prices__btn take-a-lesson__btn" aria-label="Записаться на пробное занятие">Попробовать</button>
+          <span class="prices__text">Первое занятие бесплатно</span>
+      </div>
+    </section>
+    <section class="football-lesson">
+      <div class="container football-lesson__container">
+        <h2 class="title reset football-lesson__title">
+          Проведём у вас занятие по футболу
+        </h2>
+        <div class="football-lesson-wrapper">
+          <div class="football-lesson-left">
+            <img src="img/kids-and-coaches.jpeg" class="football-lesson__img" alt="фото наших учеников с тренерами">
+          </div>
+          <div class="football-lesson-right">
+            <p class="reset football-lesson__descr">
+              По достижению школьного возраста мальчишки зачисляются в Областную Спортивную Школу, на базе которой формируется детско-юношеский футбольный клуб <b>«НЕФТЯНИК»</b>. Наш клуб на протяжении многих лет является лидером городского футбола,с регулярным участием в областных, всероссийских и международных соревнованиях.
+            </p>
+            <p class="reset football-lesson__contacts">
+              <a href="tel:+71234567890" class="contacts__phone">+7 (927) 659-84-81 </a> 
+              <a href="mailto:football-kids63@mail.ru?subject=Хочу узнать больше о Football Kids" class="contacts__e-mail">football-kids63@mail.ru</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__container">
+      <div class="footer-wrapper">
+      <div class="footer-left">
+        <ul class="footer-left__list reset">
+          <li class="footer-left__item footer-left__item--question">
+            Есть вопросы? <a href="#" class="footer-left__link">Пишите!</a>
+          </li>
+          <li class="footer-left__item footer-left__item--phone">
+            <a href="tel:+71234567890" class="footer__phone">+7 (927) 659-84-81 </a>
+          </li>
+          <li class="footer-left__item footer-left__item--mail">
+            <a href="mailto:football-kids63@mail.ru?subject=Хочу узнать больше о Football Kids" class="footer__e-mail">football-kids63@mail.ru</a>
+          </li>
+          <li class="footer-left__item footer-left__item--lesson">
+            Занятия по&nbsp;45-60&nbsp;минут, 2-3 раза в&nbsp;неделю.
+          </li>
+        </ul>
+        <button class="btn footer-left__btn take-a-lesson__btn" aria-label="Записаться на пробное занятие">Записаться</button>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+      <div class="footer-address">
+        <h3 class="reset footer-adress__sub-title">
+          Гимназия №1
+        </h3>
+        <p class="reset footer-adress__descr">
+          улица Ворошилова, 12
+        </p>
+        <h3 class="reset footer-adress__sub-title">
+          Школа №6
+        </h3>
+        <p class="reset footer-adress__descr">
+          Школьный переулок, 7
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="../validated-mask/just-validate.min.js"></script>
+  <script src="../validated-mask/inputmask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
