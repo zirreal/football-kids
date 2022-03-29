@@ -6,7 +6,7 @@
 
 Верстка одностраничного сайта футбольного клуба для детей 
 
-Результат можно увидеть здесь:
+Результат можно увидеть здесь: https://zirreal.github.io/football-kids/
 
 
 ## Основные особенности:
@@ -40,7 +40,7 @@ a simple landing
 
 `Simple landing of kids football club `
 
-You can check out the result here::
+You can check out the result here: https://zirreal.github.io/football-kids/
  
 
 ## Key Features:
